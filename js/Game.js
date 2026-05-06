@@ -170,13 +170,13 @@ Game.prototype.render_sprites = function (time) {
             if (this.map[i][j] === 38 || this.map[i][j] === 41) {
                 // Если игрок в одном тайле слева от тайла с id 40
                 if (this.player.x >= (j - 1) * 64 && this.player.x < j * 64 && this.player.y >= i * 64 - 32 && this.player.y < (i + 1) * 64 - 32) {
-                    // Заменяем тайл с id 38 на тайл с id 2
+                    // Заменяем тайл с id 38 на тайл с id 41
                     this.map[i][j] = 41;
                     if ((controls.states['use']) && (Cooldown == 0)) {
                         Cooldown = 1;
                         showCloseGridDialog();
                     }
-                } else { // Заменяем тайл с id 2 на тайл с id 38
+                } else { // Заменяем тайл с id 41 на тайл с id 38
                     this.map[i][j] = 38;
                 }
             }

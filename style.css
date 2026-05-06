@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    height: 100hv;
+    height: 100vh;
 }
 
 .center {
@@ -13,5 +13,5 @@ body {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
 }
